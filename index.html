@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGenDevOps – DevOps, Cloud & Automation Experts</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --primary:#1e2d2f;
+      --accent:#d96459;
+      --light:#f6f1eb;
+      --text:#2e2e2e;
+      --gray:#666;
+      --max:1200px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth;font-family:'Poppins', sans-serif;}
+    body{color:var(--text);background:var(--light);}
+    header{position:fixed;top:0;left:0;width:100%;background:rgba(30,45,47,0.95);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;z-index:1000;}
+    header a.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none;}
+    nav ul{display:flex;gap:2rem;list-style:none;}
+    nav a{color:#fff;text-decoration:none;font-weight:500;font-size:.9rem;}
+    nav a:hover{color:var(--accent);}
+    .hero{height:100vh;background:url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1200&q=60') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;}
+    .hero h1{font-size:2.8rem;margin-bottom:1rem;text-shadow:0 2px 6px rgba(0,0,0,.6);}
+    .scroll-down{margin-top:2rem;display:inline-block;width:32px;height:32px;border:2px solid #fff;border-radius:50%;position:relative;}
+    .scroll-down::after{content:"";position:absolute;top:7px;left:50%;width:4px;height:10px;background:#fff;transform:translateX(-50%);animation:scroll 1.4s infinite;}
+    @keyframes scroll{0%{opacity:0;transform:translate(-50%,0);}50%{opacity:1;}100%{opacity:0;transform:translate(-50%,6px);}}
+    section{padding:4rem 2rem;max-width:var(--max);margin:auto;}
+    section h2{text-align:center;margin-bottom:1rem;font-size:2rem;color:var(--primary);}
+    section p.lead{text-align:center;margin-bottom:3rem;color:var(--gray);}
+    .about{display:flex;flex-wrap:wrap;gap:2rem;align-items:center;}
+    .about .img{flex:1;min-height:280px;background:url('https://images.unsplash.com/photo-1526404421673-8e28f26b4f87?auto=format&fit=crop&w=800&q=60') center/cover no-repeat;border-radius:8px;}
+    .about .text{flex:1;}
+    .btn{display:inline-block;margin-top:1.5rem;background:var(--accent);color:#fff;padding:.8rem 1.6rem;border:none;border-radius:4px;text-decoration:none;font-weight:600;}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem;}
+    .card{padding:2rem;background:#fff;border-radius:8px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+    .card i{font-size:2rem;color:var(--accent);margin-bottom:1rem;}
+    .testimonials{background:var(--primary);color:#fff;}
+    .testimonials .wrapper{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem;}
+    .quote{background:rgba(255,255,255,.05);padding:1.5rem;border-radius:8px;font-style:italic;}
+    .quote small{display:block;margin-top:1rem;font-weight:600;color:var(--accent);}
+    .contact{background:var(--light);}
+    .contact .info{margin-bottom:2rem;}
+    .info li{list-style:none;margin:.5rem 0;}
+    .info i{color:var(--accent);margin-right:.5rem;}
+    form{display:grid;gap:1rem;max-width:500px;margin:auto;}
+    input,textarea{width:100%;padding:.8rem;border:1px solid #ccc;border-radius:4px;}
+    textarea{resize:vertical;min-height:120px;}
+    footer{padding:2rem;text-align:center;background:#eee;color:var(--gray);}
+    @media(max-width:768px){.testimonials .wrapper{grid-template-columns:1fr;}.about{flex-direction:column;}nav ul{gap:1rem;}}
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <a href="#" class="logo">NextGenDevOps</a>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero" id="home">
+    <div>
+      <h1>DEVOPS DONE RIGHT</h1>
+      <a href="#about" class="scroll-down"></a>
+    </div>
+  </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p class="lead">Modern DevOps & cloud automation consulting built for scale.</p>
+    <div class="about">
+      <div class="img"></div>
+      <div class="text">
+        <p>NextGenDevOps helps organizations accelerate delivery pipelines, automate infrastructure, and achieve operational excellence. Our team of engineers blends deep cloud expertise with battle‑tested DevOps practices, giving you scalable systems without the complexity.</p>
+        <p><strong>About NextGenDevOps:</strong> We are a team of DevOps engineers, cloud architects, and automation specialists committed to helping businesses achieve efficient, secure, and scalable software delivery. From startups to enterprises, NextGenDevOps enables operational excellence at every stage of your DevOps journey.</p>
+        <a href="#services" class="btn">What We Do</a>
+      </div>
+    </div>
+  </section>
+  <section id="services">
+    <h2>Services</h2>
+    <p class="lead">Expert solutions tailored to your growth.</p>
+    <div class="cards">
+      <div class="card"><i class="fas fa-cogs"></i><h3>CI/CD Pipelines</h3><p>Design & optimize robust GitHub Actions, GitLab or Azure DevOps pipelines.</p></div>
+      <div class="card"><i class="fas fa-cloud"></i><h3>Cloud Infrastructure</h3><p>Infrastructure‑as‑Code with Terraform, Bicep, and AWS CDK.</p></div>
+      <div class="card"><i class="fas fa-box"></i><h3>App Packaging</h3><p>Win32, MSIX & Intune deployments perfected for the enterprise.</p></div>
+      <div class="card"><i class="fas fa-shield-alt"></i><h3>Security & Compliance</h3><p>Shift‑left security, policy as code, and continuous compliance checks.</p></div>
+    </div>
+  </section>
+  
+<section class="testimonials">
+  
+  </section>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p class="lead">Ready to accelerate your DevOps journey? Let's talk.</p>
+    <ul class="info" style="text-align:center;list-style:none;padding:0;margin-bottom:2rem;">
+      <li><i class="fas fa-map-marker-alt"></i> Serving clients across Canada and surrounding regions</li>
+      <li><i class="fas fa-envelope"></i> <a href="mailto:info@opscalenexus.com">info@opscalenexus.com</a></li>
+    </ul>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+  <footer>© 2025 NextGenDevOps. All rights reserved.</footer>
+
+<section class="testimonials">
+  <section style="max-width:var(--max);margin:auto;padding:4rem 2rem;position:relative;overflow:hidden;">
+    <h2 style="color:#fff;text-align:center;margin-bottom:2rem;">What Clients Say</h2>
+    <div class="slider-container" id="testimonial-slider">
+      <div class="quote-slide active">“NextGenDevOps transformed our deployment process. Releases that took days now finish in minutes.”<small>- Sarah M., CTO, FinTech Startup</small></div>
+      <div class="quote-slide">“Their cloud automation cut our infrastructure costs by 30% while improving reliability.”<small>- Jason T., VP IT, Healthcare Solutions</small></div>
+      <div class="quote-slide">“From Intune packaging to full CI/CD, the team delivered beyond expectations.”<small>- Priya R., Lead Engineer, SaaS Platform</small></div>
+    </div>
+    <button class="nav prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="nav next" onclick="changeSlide(1)">&#10095;</button>
+    <div class="dots" id="dots"></div>
+  </section>
+</section>
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll('.quote-slide');
+  const dotsContainer = document.getElementById('dots');
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement('span');
+    dot.classList.add('dot');
+    dot.addEventListener('click', () => showSlide(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = document.querySelectorAll('.dot');
+
+  function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    currentIndex = (index + slides.length) % slides.length;
+    slides[currentIndex].classList.add('active');
+    dots[currentIndex].classList.add('active');
+  }
+
+  function changeSlide(step) {
+    showSlide(currentIndex + step);
+  }
+
+  function autoRotate() {
+    changeSlide(1);
+  }
+
+  showSlide(0);
+  setInterval(autoRotate, 4000);
+</script>
+<style>
+  .slider-container {display:flex;transition:transform 0.5s ease;position:relative;min-height:140px;justify-content:center;align-items:center;text-align:center;}
+  .quote-slide {flex:0 0 100%;opacity:0;position:absolute;transition:opacity 0.6s ease-in-out;margin: 0 auto;max-width: 700px;}
+  .quote-slide.active {opacity:1;position:relative;}
+  .quote-slide small {display:block;margin-top:1rem;font-weight:600;color:var(--accent);}
+  .nav {position:absolute;top:50%;transform:translateY(-50%);background:none;border:none;color:#fff;font-size:2rem;cursor:pointer;padding:0 1rem;z-index:10;}
+  .nav.prev {left:0;}
+  .nav.next {right:0;}
+  .dots {text-align:center;margin-top:1rem;}
+  .dot {display:inline-block;width:10px;height:10px;margin:0 5px;background:#fff;border-radius:50%;cursor:pointer;opacity:0.5;transition:opacity 0.3s;}
+  .dot.active {opacity:1;background:var(--accent);}
+</style>
+
+</body>
+</html>
